@@ -1,0 +1,7 @@
+.idea/
+
+bin/
+lib/
+include/
+
+project/settings/local.py

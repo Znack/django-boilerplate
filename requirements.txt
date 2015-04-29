@@ -1,0 +1,10 @@
+django==1.7
+
+# django-rest and its requirements
+markdown
+django-filter
+django-guardian
+djangorestframework
+
+# database helpers
+psycopg2
