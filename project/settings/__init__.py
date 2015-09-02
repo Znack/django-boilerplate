@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from project.exceptions import OpenCostLocalSettingsDoesNotExist
+from project.exceptions import ProjectLocalSettingsDoesNotExist
 
 ##################################################################
 # ALL INCLUDES OF SETTINGS FILES
@@ -20,7 +20,7 @@ from .templates import *
 try:
     from .local import *
 except ImportError:
-    raise OpenCostLocalSettingsDoesNotExist("There is no local settings")
+    raise ProjectLocalSettingsDoesNotExist("There is no local settings")
 
 if DEBUG:
     from .production import *
