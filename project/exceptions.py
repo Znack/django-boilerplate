@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 
 
-class OpenCostBaseException(Exception):
+class ProjectBaseException(Exception):
     pass
 
 
-class OpenCostBaseDirectoryVariableException(OpenCostBaseException):
+class ProjectBaseDirectoryVariableException(ProjectBaseException):
     pass
 
 
-class OpenCostLocalSettingsDoesNotExist(OpenCostBaseException):
+class ProjectLocalSettingsDoesNotExist(ProjectBaseException):
     pass
