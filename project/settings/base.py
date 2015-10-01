@@ -16,12 +16,12 @@ from django.utils.translation import ugettext_lazy as _
 
 # base repo folder, here stored virtualenv files, manage.py etc
 try:
-    BASE_DIR = os.environ['OPEN_COST_PATH']
+    BASE_DIR = os.environ['PROJECT_PATH']
 except KeyError as error:
     raise ProjectBaseDirectoryVariableException(
-        "You have no set env variable OPEN_COST_PATH, it should store a reference to project directory. "
+        "You have no set env variable PROJECT_PATH, it should store a reference to project directory. "
         "Maybe you haven't used the manage.py file for launch project? "
-        "Or set OPEN_COST_PATH manually, it must contain absolute path to project main directory with manage.py file."
+        "Or set PROJECT_PATH manually, it must contain absolute path to project main directory with manage.py file."
     )
 
 # folder with collected static files, ready to download by client apps
