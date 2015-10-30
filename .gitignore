@@ -1,7 +1,13 @@
 .idea/
 
+env/
+.env/
 bin/
 lib/
 include/
 
 project/settings/local.py
+
+!public/static/.gitkeep
+!public/media/.gitkeep
+public/
