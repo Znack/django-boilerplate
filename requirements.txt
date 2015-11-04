@@ -1,10 +1,16 @@
-django==1.7
+Django==1.7
+argparse==1.2.1
+six==1.10.0
+wsgiref==0.1.2
 
-# django-rest and its requirements
-markdown
-django-filter
-django-guardian
-djangorestframework
+# Django REST and its reqs
+Markdown==2.6.3
+django-filter==0.11.0
+django-guardian==1.3.1
+djangorestframework==3.3.0
 
-# database helpers
-psycopg2
+# DB
+MySQL-python==1.2.5
+
+# Utils
+django-grappelli==2.7.1

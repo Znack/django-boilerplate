@@ -16,13 +16,12 @@ from .logging import *
 from .middlewares import *
 from .static import *
 from .templates import *
+from .grappelli_settings import *
+from .rest import *
+
 
 try:
     from .local import *
 except ImportError:
-    raise ProjectLocalSettingsDoesNotExist("There is no local settings")
-
-if DEBUG:
     from .production import *
-else:
-    from .development import *
+    print("There is no local settings")
