@@ -14,9 +14,4 @@ TEMPLATE_CONTEXT_PROCESSORS = [
     "django.core.context_processors.tz",
     "django.core.context_processors.request",
     "django.contrib.messages.context_processors.messages",
-    "im.context_processors.unread_messages",
-    "friends.context_processors.friends",
-    "project.context_processors.languages",
-    "project.context_processors.socketurl",
-    "project.context_processors.default_avatar_url",
 ]
