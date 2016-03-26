@@ -18,6 +18,7 @@ from .static import *
 from .templates import *
 from .grappelli_settings import *
 from .rest import *
+from .swagger import *
 
 
 try:
