@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 DEBUG = True
-TEMPLATE_DEBUG = DEBUG
 
 ALLOWED_HOSTS = ["*"]  # must specify domain for production
 
