@@ -3,7 +3,9 @@
 ## Deploy on production
 
 `virtualenv --python=python3 --no-site-packages ./.env`
+
 `.env/bin/pip install -r requirements.txt`
+
 `.env/bin/pip install gunicorn`
 
 
@@ -44,7 +46,9 @@ server {
 }
 ```
 Enable config `ln -s /etc/nginx/sites-available/PROJECT_NAME.conf /etc/nginx/sites-enabled/`
+
 Test configs `nginx -t`
+
 `service nginx restart`
 
 
@@ -69,7 +73,9 @@ stdout_logfile = /srv/PROJECT_NAME/logs/gunicorn_out.log
 stderr_logfile = /srv/PROJECT_NAME/logs/gunicorn_err.log
 ```
 `supervisorctl reread`
+
 `supervisorctl reload`
+
 `supervisorctl status`
 
 
