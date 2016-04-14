@@ -11,3 +11,9 @@ project/settings/local.py
 !public/static/.gitkeep
 !public/media/.gitkeep
 public/
+
+!logs/.gitkeep
+logs/
+!pids/.gitkeep
+pids/
+connection.sock
