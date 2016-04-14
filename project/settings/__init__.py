@@ -23,9 +23,6 @@ from .swagger import *
 import pymysql
 pymysql.install_as_MySQLdb()
 
-import pymysql
-pymysql.install_as_MySQLdb()
-
 
 try:
     from .local import *
