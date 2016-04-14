@@ -19,6 +19,9 @@ from .templates import *
 from .grappelli_settings import *
 from .rest import *
 
+import pymysql
+pymysql.install_as_MySQLdb()
+
 
 try:
     from .local import *
