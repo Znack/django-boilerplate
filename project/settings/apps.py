@@ -8,6 +8,7 @@ THIRD_PARTY_APPS = (
     'corsheaders',
 
     'django_filters',
+    'drf_yasg',
 
     'django.contrib.auth',
     'django.contrib.sessions',
