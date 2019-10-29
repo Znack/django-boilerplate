@@ -11,9 +11,6 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 import sys
-from project.exceptions import ProjectBaseDirectoryVariableException
-from django.utils.translation import ugettext_lazy as _
-
 
 # folder with main django project which contains settings, urls and applications package
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))

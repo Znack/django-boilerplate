@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Etc/UTC'
 
 USE_I18N = True
 
