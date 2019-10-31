@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-from project.exceptions import ProjectLocalSettingsDoesNotExist
 
 ##################################################################
 # ALL INCLUDES OF SETTINGS FILES
@@ -17,6 +16,7 @@ from .middlewares import *
 from .static import *
 from .templates import *
 from .rest import *
+from .jwt import *
 
 try:
     from .local import *
