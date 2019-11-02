@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-from project.exceptions import ProjectLocalSettingsDoesNotExist
 
 ##################################################################
 # ALL INCLUDES OF SETTINGS FILES
@@ -16,13 +15,8 @@ from .logging import *
 from .middlewares import *
 from .static import *
 from .templates import *
-from .grappelli_settings import *
 from .rest import *
-from .swagger import *
-
-import pymysql
-pymysql.install_as_MySQLdb()
-
+from .jwt import *
 
 try:
     from .local import *

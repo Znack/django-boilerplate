@@ -1,19 +1,89 @@
 .idea/
+.vscode
+.history
+LC_MESSAGES/
+.mypy_cache
 
-env/
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/local
 .env/
-bin/
+.venv
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
 lib/
+bin/
 include/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+.sql
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*,cover
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# OS Specific files
+.DS_Store
+
+
+# For Production
+pids/
+!pids/.gitkeep
+logs/
+!logs/.gitkeep
+connection.sock
 
 project/settings/local.py
-
+#
 !public/static/.gitkeep
 !public/media/.gitkeep
 public/
 
-!logs/.gitkeep
-logs/
-!pids/.gitkeep
-pids/
-connection.sock
+# JWT auth public key
+keys/auth-key

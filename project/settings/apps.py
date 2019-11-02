@@ -1,18 +1,25 @@
 # -*- coding: utf-8 -*-
 
-INSTALLED_APPS = (
+LOCAL_APPS = (
     'core',
+)
+
+THIRD_PARTY_APPS = (
+    'corsheaders',
+
+    'django_filters',
+    'drf_yasg',
+
+    'django.contrib.auth',
+    'django.contrib.sessions',
+    'django.contrib.contenttypes',
 
     'rest_framework',
     'rest_framework.authtoken',
-    'rest_framework_swagger',
-
-    'django.contrib.contenttypes',
-    'grappelli',
 
     'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
 )
+
+INSTALLED_APPS = THIRD_PARTY_APPS + LOCAL_APPS
